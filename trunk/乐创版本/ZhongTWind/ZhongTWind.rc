@@ -1,0 +1,552 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ZhongTWind.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ZhongTWind.ico"
+IDI_ICON_REDLIGHT       ICON    DISCARDABLE     "res\\icon_red.ico"
+IDI_ICON_GREENLIGHT     ICON    DISCARDABLE     "res\\icon_gre.ico"
+IDI_ICON_BLUELIGHT      ICON    DISCARDABLE     "res\\icon_blu.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ZhongTWind"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ZhongTWind 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ZHONGTWIND_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "连云港中通玻璃钢缠绕控制程序"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,260,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,260,23,50,14
+    LTEXT           "TODO: 在这里设置对话控制。",IDC_STATIC,50,90,200,8
+    PUSHBUTTON      "开始缠绕",IDB_STARTWIND,101,141,55,28
+    PUSHBUTTON      "参数设置",IDB_SYSPARAMSET,21,141,54,29
+    PUSHBUTTON      "IO测试",IDB_IOTEST,176,141,53,28
+END
+
+IDD_DLG_SYSPARAM DIALOG DISCARDABLE  0, 0, 446, 290
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,389,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,389,24,50,14
+    GROUPBOX        "数据更新",IDF_1,18,22,176,226
+    GROUPBOX        "Static",IDC_STATIC,208,22,176,226
+    LTEXT           "主轴脉冲数：",IDC_STATIC,29,37,51,11
+    LTEXT           "小车脉冲数：",IDC_STATIC,29,51,51,11
+    LTEXT           "主轴最大转速：",IDC_STATIC,29,65,60,11
+    LTEXT           "小车最大转速：",IDC_STATIC,29,79,60,11
+    LTEXT           "主轴一档系数：",IDC_STATIC,29,90,60,11
+    LTEXT           "主轴二档系数：",IDC_STATIC,29,102,60,11
+    LTEXT           "主轴三档系数：",IDC_STATIC,29,115,60,11
+    LTEXT           "主轴四档系数：",IDC_STATIC,29,128,60,8
+    LTEXT           "主轴五档系数：",IDC_STATIC,29,140,60,8
+    LTEXT           "主轴六档系数：",IDC_STATIC,29,151,60,11
+    LTEXT           "小车减速比：",IDC_STATIC,29,165,53,11
+    LTEXT           "小车每转距离：",IDC_STATIC,29,178,62,11
+    LTEXT           "找零点螺距：",IDC_STATIC,29,192,62,11
+    LTEXT           "加速度：",IDC_STATIC,29,203,62,10
+    LTEXT           "加速度系数：",IDC_STATIC,29,219,62,10
+    EDITTEXT        IDE_SPEEDUP_A_FACTOR,92,216,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_ZERO_LUOJU,92,190,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_SPEEDUP_A,92,203,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_CAR_SPEEDDOWNP,92,164,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_CAR_DISTANCE_PER_R,92,177,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_MAIN_AXE_LEVELFACTOR_5,92,138,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_MAIN_AXE_LEVELFACTOR_6,92,151,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_MAIN_AXE_LEVELFACTOR_3,92,112,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_MAIN_AXE_LEVELFACTOR_4,92,125,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_MAIN_AXE_LEVELFACTOR_1,92,86,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_MAIN_AXE_LEVELFACTOR_2,92,99,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_MAIN_AXE_MAXSPEED,92,60,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_CAR_MAXSPEED,92,73,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_MAIN_AXE_PULSES,92,34,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_CAR_PULSES,92,47,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "更新数据",IDC_BUTTON_UPDATEDATA,145,255,48,17
+END
+
+IDD_DLGIO DIALOG DISCARDABLE  0, 0, 418, 294
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "板卡IO测试"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,303,252,50,14
+    PUSHBUTTON      "取消",IDCANCEL,356,252,50,14
+    LTEXT           "说明：请用鼠标点击指示灯控制输出信号的电平切换",
+                    IDC_STATIC,20,247,187,10
+    LTEXT           "绿色--低电平；红色--高电平；蓝色--错误",IDC_STATIC,20,
+                    259,146,10
+    GROUPBOX        "输入信号",IDC_STATIC,17,15,369,103
+    LTEXT           "SD1",IDC_STATIC,49,28,16,8
+    LTEXT           "EL1-",IDC_STATIC,73,28,16,8
+    LTEXT           "EL1+",IDC_STATIC,23,66,16,8
+    LTEXT           "ORG1",IDC_STATIC,23,82,22,8
+    LTEXT           "SD2",IDC_STATIC,343,40,16,8
+    LTEXT           "加砂",IDC_STATIC,348,26,17,8
+    LTEXT           "环向",IDC_STATIC,308,32,18,8
+    LTEXT           "清零",IDC_STATIC,175,70,18,8
+    LTEXT           "自动",IDC_STATIC,247,28,17,8
+    LTEXT           "手动",IDC_STATIC,273,28,17,8
+    LTEXT           "小车减速",IDC_STATIC,124,25,16,17
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_1,47,42,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_2,72,42,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_3,97,42,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_4,122,42,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_5,147,42,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_6,172,42,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_7,197,42,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_8,222,42,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_9,247,42,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_10,272,42,20,20,
+                    SS_CENTERIMAGE
+    LTEXT           "小车加速",IDC_STATIC,99,25,16,17
+    LTEXT           "小车反向",IDC_STATIC,94,70,16,17
+    LTEXT           "小车正向",IDC_STATIC,199,25,16,17
+    LTEXT           "主轴反向",IDC_STATIC,175,25,16,17
+    LTEXT           "主轴正向",IDC_STATIC,149,25,16,17
+    LTEXT           "ALM",IDC_STATIC,197,70,16,11
+    LTEXT           "EA1",IDC_STATIC,225,70,16,11
+    LTEXT           "EB1",IDC_STATIC,252,70,16,11
+    LTEXT           "EZ1",IDC_STATIC,276,70,16,11
+    LTEXT           "EA2",IDC_STATIC,357,70,16,11
+    LTEXT           "EB2",IDC_STATIC,302,70,16,11
+    LTEXT           "EZ2",IDC_STATIC,330,70,16,11
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_11,47,91,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_12,72,91,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_13,97,91,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_14,122,91,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_15,147,91,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDS_ICON_IN_16,172,91,20,20,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDC_STATIC,197,91,20,20,SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDC_STATIC,222,91,20,20,SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDC_STATIC,247,91,20,20,SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDC_STATIC,272,91,20,20,SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDC_STATIC,356,91,20,20,SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDC_STATIC,301,91,20,20,SS_CENTERIMAGE
+    ICON            IDI_ICON_REDLIGHT,IDC_STATIC,326,91,20,20,SS_CENTERIMAGE
+    GROUPBOX        "输出信号",IDC_STATIC,17,122,370,113
+    LTEXT           "OT1",IDC_STATIC,97,137,14,9
+    LTEXT           "OT2",IDC_STATIC,118,137,14,9
+    LTEXT           "主轴反向",IDC_STATIC,49,132,16,17
+    LTEXT           "主轴正向",IDC_STATIC,72,132,16,17
+    LTEXT           "OT1",IDC_STATIC,140,137,14,9
+    LTEXT           "OT2",IDC_STATIC,161,137,14,9
+    LTEXT           "OT1",IDC_STATIC,182,137,14,9
+    LTEXT           "OT2",IDC_STATIC,203,137,14,9
+    LTEXT           "OT1",IDC_STATIC,224,137,14,9
+    LTEXT           "OT2",IDC_STATIC,245,137,14,9
+    LTEXT           "OT1",IDC_STATIC,267,137,14,9
+    LTEXT           "OT2",IDC_STATIC,288,137,14,9
+    LTEXT           "OT1",IDC_STATIC,309,137,14,9
+    LTEXT           "OT2",IDC_STATIC,330,137,14,9
+    PUSHBUTTON      "",IDB_MAIN_NEG_DIR,49,153,16,16
+    PUSHBUTTON      "",IDB_MAIN_POS_DIR,73,153,16,16
+    PUSHBUTTON      "",IDB_MAIN_POS_DIR2,97,153,16,16
+    PUSHBUTTON      "",IDB_MAIN_POS_DIR3,118,153,16,16
+    PUSHBUTTON      "",IDB_MAIN_POS_DIR4,140,153,16,16
+END
+
+IDD_DLG_WORKPLAN DIALOG DISCARDABLE  0, 0, 631, 341
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,533,13,36,14
+    LTEXT           "名称",IDC_STATIC,24,12,18,9
+    LTEXT           "数据",IDC_STATIC,79,12,18,9
+    LTEXT           "管道直径mm",IDC_STATIC,13,25,48,9
+    EDITTEXT        IDE_PIPEDIAMETER,68,23,51,12,ES_AUTOHSCROLL
+    LTEXT           "纱片宽度mm",IDC_STATIC,13,39,48,9
+    LTEXT           "砂片宽度mm",IDC_STATIC,13,53,48,9
+    LTEXT           "交叉角度(度)",IDC_STATIC,13,67,48,9
+    LTEXT           "缓冲区长度mm",IDC_STATIC,13,81,52,9
+    LTEXT           "加砂速比%",IDC_STATIC,13,137,48,9
+    EDITTEXT        IDE_BANDI_WIDTH,68,37,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_SANDWIDTH,68,51,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_CROSS_ANGLE,68,65,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_BUFFLENGTH,68,79,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_SANDRATE,68,135,51,12,ES_AUTOHSCROLL
+    LTEXT           "管道总长mm",IDC_STATIC,13,95,48,9
+    EDITTEXT        IDE_PIPE_TOTALLENGTH,68,93,51,12,ES_AUTOHSCROLL
+    LTEXT           "起端停角",IDC_STATIC,13,109,48,9
+    EDITTEXT        IDE_START_STOPANGLE,68,107,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_STOP_STOPANGLE,68,121,51,12,ES_AUTOHSCROLL
+    LTEXT           "终端停角",IDC_STATIC,13,123,48,9
+    CONTROL         "一档",IDC_RADIO_MAINAXE_SPEED_1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,168,30,9
+    CONTROL         "二档",IDC_RADIO_MAINAXE_SPEED_2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,18,180,30,9
+    CONTROL         "三档",IDC_RADIO_MAINAXE_SPEED_3,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,18,192,30,9
+    CONTROL         "四档",IDC_RADIO_MAINAXE_SPEED_4,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,79,168,30,9
+    CONTROL         "五档",IDC_RADIO_MAINAXE_SPEED_5,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,79,180,30,9
+    CONTROL         "六档",IDC_RADIO_MAINAXE_SPEED_6,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,79,192,30,9
+    CONTROL         "固定纱宽",IDR_FIRM_SHA_WIDTH,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,230,52,9
+    CONTROL         "固定交叉角度",IDR_FIRM_CROSSANGLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,18,242,69,9
+    CONTROL         "固定两端停角",IDR_FIRM_STOPANGLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,18,254,69,9
+    CONTROL         "1切点",IDC_RADIO_CUTOFF_POINTS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,284,31,9
+    CONTROL         "2切点",IDC_RADIO_MAINAXE_SPEED_10,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,18,296,31,9
+    CONTROL         "3切点",IDC_RADIO_MAINAXE_SPEED_12,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,18,308,30,9
+    CONTROL         "4切点",IDC_RADIO_MAINAXE_SPEED_13,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,78,284,30,9
+    CONTROL         "5切点",IDC_RADIO_MAINAXE_SPEED_14,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,78,296,30,9
+    GROUPBOX        "主轴档位",IDC_STATIC,13,156,106,56
+    GROUPBOX        "缠绕原则",IDC_STATIC,13,218,106,51
+    GROUPBOX        "切点数",IDC_STATIC,13,272,106,51
+    CONTROL         "List1",IDLIST_SHOW_LAYER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,131,168,367,148
+    PUSHBUTTON      "运行",IDB_RUN,533,31,36,16
+    GROUPBOX        "已安排缠绕任务",IDC_STATIC,124,156,404,167
+    GROUPBOX        "创建缠绕任务",IDC_STATIC,124,10,404,142
+    CONTROL         "List2",IDL_CREATETASK,"SysListView32",WS_BORDER | 
+                    WS_TABSTOP,133,24,364,122
+    PUSHBUTTON      "计算",IDB_COMPUTE,502,24,21,58
+    PUSHBUTTON      "删除",IDB_DELTASK,501,168,23,23
+    PUSHBUTTON      "添加",IDB_ADDTASK,502,86,20,59
+END
+
+IDD_INWORKING DIALOGEX 0, 0, 542, 341
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "玻璃钢管道缠绕系统"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,485,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,485,24,50,14
+    GROUPBOX        "任务信息",IDC_STATIC,16,17,134,180
+    LTEXT           "1.管道直径:",IDC_STATIC,21,36,55,10
+    LTEXT           "2.纱片宽度:",IDC_STATIC,21,53,55,10
+    LTEXT           "3.起始位置:",IDC_STATIC,21,69,55,10
+    LTEXT           "4.终止位置:",IDC_STATIC,21,86,55,10
+    LTEXT           "5.起端停角:",IDC_STATIC,21,104,55,10
+    LTEXT           "6.终端停角:",IDC_STATIC,21,122,55,10
+    LTEXT           "7.缠绕次数:",IDC_STATIC,21,139,55,10
+    LTEXT           "8.交叉角度:",IDC_STATIC,21,157,55,10
+    EDITTEXT        IDE_PIPE_DIAM,81,32,50,15,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_SHAPIAN_WIDTH,80,49,51,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_START_POS,80,66,51,15,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_END_POS,79,83,52,15,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_START_STOPANGLE,79,100,52,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_END_STOPANGLE,79,118,52,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_WIND_NUM,79,136,52,15,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_CROSS_ANGLE,79,153,52,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    GROUPBOX        "缠绕监控信息",IDC_STATIC,153,17,269,220
+    LTEXT           "A.工作提示:",IDC_STATIC,165,31,55,10
+    EDITTEXT        IDE_WORKING_OUTPUT,223,27,191,43,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "B.工作进度:",IDC_STATIC,165,79,55,10
+    LTEXT           "1.主轴速度:",IDC_STATIC,165,98,55,10
+    LTEXT           "2.主轴位置:",IDC_STATIC,165,118,55,10
+    LTEXT           "3.主轴方向:",IDC_STATIC,165,138,55,10
+    LTEXT           "4.小车速度:",IDC_STATIC,165,156,55,10
+    LTEXT           "5.小车位置:",IDC_STATIC,165,175,55,10
+    LTEXT           "6.小车方向:",IDC_STATIC,165,194,55,10
+    LTEXT           "7.已缠绕次数:",IDC_STATIC,165,214,55,10
+    EDITTEXT        IDE_WORKING_PROGRESS_1,223,74,50,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_WORKING_PROGRESS_2,279,74,50,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_WORKING_PROGRESS_3,335,74,50,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_MAINAXE_SPEED,223,95,50,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_MAINAXE_POS,223,114,50,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_MAINAXE_DIR,223,133,50,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_CAR_SPEED,223,153,50,15,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_CAR_POS,223,172,50,15,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_CAR_DIR,223,191,50,15,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDE_ALREADY_WINDNUM,223,211,50,15,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "开始测量",IDB_MEASURESTART,275,254,45,14
+    PUSHBUTTON      "制动",IDB_STOP,324,254,41,13
+    PUSHBUTTON      "直接制动",IDB_STOP_EMERG,369,254,47,13
+    LTEXT           "铺层开始位置",IDC_STATIC,167,277,55,10
+    EDITTEXT        IDE_PUCENG_START,169,292,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始缠绕",IDB_STARTWORK,249,287,93,20
+    PUSHBUTTON      "初始化",IDB_INITIAL,166,255,51,13
+    PUSHBUTTON      "标定零点",IDB_SET_ZEROPOT,221,254,50,14
+    GROUPBOX        "命令控制",IDC_STATIC,154,242,269,74
+    EDITTEXT        IDE_DEBUG_OUT,23,268,119,44,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    GROUPBOX        "调试",IDC_STATIC,17,201,132,115
+    EDITTEXT        IDC_EDIT1,23,214,41,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,66,213,45,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "纪录",IDC_BUTTON3,87,233,31,14
+    EDITTEXT        IDC_EDIT3,24,233,55,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,24,250,55,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "纪录",IDC_BUTTON4,88,249,31,14
+    LTEXT           "9.缠绕方式:",IDC_STATIC,21,174,55,10
+    EDITTEXT        IDE_WINDMETHOD,79,171,52,15,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_DLGMODALFRAME
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ZhongTWind Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ZhongTWind\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ZhongTWind.EXE\0"
+            VALUE "ProductName", "ZhongTWind 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ZHONGTWIND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DLG_SYSPARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_DLGIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 411
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_DLG_WORKPLAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 624
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 334
+    END
+
+    IDD_INWORKING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 535
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 334
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_LSTR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "删除"
+    BEGIN
+        MENUITEM "删除本行缠绕任务",            IDM_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ZhongTWind(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ZhongTWind.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

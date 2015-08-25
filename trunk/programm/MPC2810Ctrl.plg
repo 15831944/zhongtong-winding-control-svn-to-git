@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MPC2810Ctrl - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/MPC2810Ctrl.res" /d "_DEBUG" /d "_AFXDLL" "D:\personal\中通\programm\MPC2810Ctrl.rc"" 
+Creating temporary file "C:\DOCUME~1\dell\LOCALS~1\Temp\RSP127.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/MPC2810Ctrl.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\personal\中通\programm\arControlParam.cpp"
+"D:\personal\中通\programm\AxeCtrl.cpp"
+"D:\personal\中通\programm\DlgForIO.cpp"
+"D:\personal\中通\programm\DlgTest.cpp"
+"D:\personal\中通\programm\global.cpp"
+"D:\personal\中通\programm\MainOperationDlg.cpp"
+"D:\personal\中通\programm\MPC2810Ctrl.cpp"
+"D:\personal\中通\programm\MPC2810CtrlDlg.cpp"
+"D:\personal\中通\programm\MyButton.cpp"
+"D:\personal\中通\programm\SysParamSetDlg.cpp"
+"D:\personal\中通\programm\SysSetParam.cpp"
+"D:\personal\中通\programm\WindTaskInfo.cpp"
+"D:\personal\中通\programm\WorkMonitorDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dell\LOCALS~1\Temp\RSP127.tmp" 
+Creating temporary file "C:\DOCUME~1\dell\LOCALS~1\Temp\RSP128.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/MPC2810Ctrl.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\personal\中通\programm\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dell\LOCALS~1\Temp\RSP128.tmp" 
+Creating temporary file "C:\DOCUME~1\dell\LOCALS~1\Temp\RSP129.tmp" with contents
+[
+winmm.lib setupapi.lib mpc2810.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MPC2810Ctrl.pdb" /debug /machine:I386 /out:"Debug/MPC2810Ctrl.exe" /pdbtype:sept 
+".\Debug\arControlParam.obj"
+".\Debug\AxeCtrl.obj"
+".\Debug\DlgForIO.obj"
+".\Debug\DlgTest.obj"
+".\Debug\global.obj"
+".\Debug\MainOperationDlg.obj"
+".\Debug\MPC2810Ctrl.obj"
+".\Debug\MPC2810CtrlDlg.obj"
+".\Debug\MyButton.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SysParamSetDlg.obj"
+".\Debug\SysSetParam.obj"
+".\Debug\WindTaskInfo.obj"
+".\Debug\WorkMonitorDlg.obj"
+".\Debug\MPC2810Ctrl.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\dell\LOCALS~1\Temp\RSP129.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+arControlParam.cpp
+AxeCtrl.cpp
+DlgForIO.cpp
+DlgTest.cpp
+global.cpp
+MainOperationDlg.cpp
+MPC2810Ctrl.cpp
+MPC2810CtrlDlg.cpp
+MyButton.cpp
+SysParamSetDlg.cpp
+SysSetParam.cpp
+WindTaskInfo.cpp
+WorkMonitorDlg.cpp
+D:\personal\中通\programm\WorkMonitorDlg.cpp(1769) : warning C4101: 'halfEncoderlen' : unreferenced local variable
+D:\personal\中通\programm\WorkMonitorDlg.cpp(1761) : warning C4101: 'EndPosEncoder' : unreferenced local variable
+D:\personal\中通\programm\WorkMonitorDlg.cpp(1771) : warning C4101: 'temp_CurSpeed' : unreferenced local variable
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\dell\LOCALS~1\Temp\RSP12B.tmp" with contents
+[
+/nologo /o"Debug/MPC2810Ctrl.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\arControlParam.sbr"
+".\Debug\AxeCtrl.sbr"
+".\Debug\DlgForIO.sbr"
+".\Debug\DlgTest.sbr"
+".\Debug\global.sbr"
+".\Debug\MainOperationDlg.sbr"
+".\Debug\MPC2810Ctrl.sbr"
+".\Debug\MPC2810CtrlDlg.sbr"
+".\Debug\MyButton.sbr"
+".\Debug\SysParamSetDlg.sbr"
+".\Debug\SysSetParam.sbr"
+".\Debug\WindTaskInfo.sbr"
+".\Debug\WorkMonitorDlg.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\dell\LOCALS~1\Temp\RSP12B.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MPC2810Ctrl.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

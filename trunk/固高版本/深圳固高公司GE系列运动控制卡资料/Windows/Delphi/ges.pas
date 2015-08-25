@@ -1,0 +1,107 @@
+unit ges;
+
+interface
+
+type
+  TCommandHandle = procedure(command:PChar;rtn: SmallInt);stdcall;
+  TDoublePnt=Array [0..3] of Double;
+
+function GT_AddList():SmallInt;stdcall;External 'ges.dll';
+function GT_AddLookData(code,plane_group:char;r,x,y,z,vel,cx,cy:Double;i:Word;n:LongInt;flag:SmallInt):SmallInt;stdcall;External 'ges.dll';
+function GT_AlarmOff(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_AlarmOn(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_ArcXY(x_center,y_center,angle:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_ArcXYP(x_end,y_end,r:Double;direction:SmallInt):SmallInt;stdcall;External 'ges.dll';
+function GT_ArcYZ(y_center,z_center,angle:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_ArcYZP(y_end,z_end,r:Double;direction:SmallInt):SmallInt;stdcall;External 'ges.dll';
+function GT_ArcZX(z_center,x_center,angle:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_ArcZXP(z_end,x_end,r:Double;direction:SmallInt):SmallInt;stdcall;External 'ges.dll';
+function GT_AuStpOff(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_AuStpOn(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_AxisOff(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_AxisOn(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_BufIO(status:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_BufIOBit(bit:Word;status:SmallInt):SmallInt;stdcall;External 'ges.dll';
+function GT_CalVel(out vel:Double;out number:LongInt):SmallInt;stdcall;External 'ges.dll';
+function GT_CalVelEx(out vel:Double;out number:LongInt;out f:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_CaptHome(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_CaptIndex(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_CaptProb():SmallInt;stdcall;External 'ges.dll';
+function GT_Close():SmallInt;stdcall;External 'ges.dll';
+function GT_ClrEncPos(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_ClrSts(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_Delay(time:LongInt):SmallInt;stdcall;External 'ges.dll';
+function GT_DrvRst(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_EncOff(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_EncOn(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_EncPos(axis:Word;out pos:LongInt):SmallInt;stdcall;External 'ges.dll';
+function GT_EncSns(sense:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_EncVel(number:Word;out vel:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_EndList():SmallInt;stdcall;External 'ges.dll';
+function GT_EStpMtn():SmallInt;stdcall;External 'ges.dll';
+function GT_ExInpt(out input:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_ExitHWheel():SmallInt;stdcall;External 'ges.dll';
+function GT_ExOpt(value:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_ExOptBit(bit,value:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_GetAdc(channel:Word;out voltage:SmallInt):SmallInt;stdcall;External 'ges.dll';
+function GT_GetAtlPos(axis:Word;out pos:LongInt):SmallInt;stdcall;External 'ges.dll';
+function GT_GetAtlErr(axis:Word;out error:LongInt):SmallInt;stdcall;External 'ges.dll';
+function GT_GetAtlVel(axis:Word;out vel:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_GetBrkPnt(out point:TDoublePnt):SmallInt;stdcall;External 'ges.dll';
+function GT_GetCapt(axis:Word;out pos:LongInt):SmallInt;stdcall;External 'ges.dll';
+function GT_GetCmdSts(out status:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_GetCrdSts(out status:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_GetCurrentCardNo():SmallInt;stdcall;External 'ges.dll';
+function GT_GetHomeSwt(out home:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_GetLmtSwt(out limit:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_GetMtnNm(out number:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_GetPosErr(axis:Word;out error:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_GetPrfPnt(out point:TDoublePnt):SmallInt;stdcall;External 'ges.dll';
+function GT_GetPrfVel(out vel:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_GetSegPnt(out point:TDoublePnt):SmallInt;stdcall;External 'ges.dll';
+function GT_GetSts(axis:Word;out status:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_HandWheel(axis:Word;ratio:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_HardRst():SmallInt;stdcall;External 'ges.dll';
+function GT_HomeSns(sense:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_HookCommand(CommandHandle:TCommandHandle):SmallInt;stdcall;External 'ges.dll';
+function GT_IndexSns(sense:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_InitLookAhead(t,acc_max,acc,vel:Double;n:SmallInt;con:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_LmtSns(sense:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_LmtsOff(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_LmtsOn(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_LnXY( x,y:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_LnXYG0(x,y:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_LnXYZ(x,y,z:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_LnXYZG0(x,y,z:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_MapCnt(axis:Word;count:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_MltiUpdt(mask:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_MvXY(x,y,vel,acc:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_MvXYZ(x,y,z,vel,acc:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_Open(address:LongWord=65535):SmallInt;stdcall;External 'ges.dll';
+function GT_Override(override:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_OverrideG0(override:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_Reset():SmallInt;stdcall;External 'ges.dll';
+function GT_RestoreMtn():SmallInt;stdcall;External 'ges.dll';
+function GT_RstSts(axis,mask:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_SetAdcChn(channel:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_SetAtlPos(axis:Word;pos:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_SetDccFlag():SmallInt;stdcall;External 'ges.dll';
+function GT_SetDccVel(vel:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_SetMaxVel(vel:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_SetPosErr(axis:Word;error:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_SetStpAcc(acc:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_SetStrtVel(value:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_SetSynAcc(acc:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_SetSynVel(vel:Double):SmallInt;stdcall;External 'ges.dll';
+function GT_StepDir(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_StepPulse(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_StpMtn():SmallInt;stdcall;External 'ges.dll';
+function GT_StrtList():SmallInt;stdcall;External 'ges.dll';
+function GT_StrtMtn():SmallInt;stdcall;External 'ges.dll';
+function GT_SwitchtoCardNo(number:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_Update(axis:Word):SmallInt;stdcall;External 'ges.dll';
+function GT_ZeroPos(axis:Word):SmallInt;stdcall;External 'ges.dll';
+
+implementation
+
+end.

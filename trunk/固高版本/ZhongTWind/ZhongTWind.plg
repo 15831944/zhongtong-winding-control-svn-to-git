@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZhongTWind - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/ZhongTWind.res" /d "_DEBUG" "E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\固高版本\ZhongTWind\ZhongTWind.rc"" 
+Creating temporary file "D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP3F3.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/ZhongTWind.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\固高版本\ZhongTWind\ZhongTWind.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP3F3.tmp" 
+Creating temporary file "D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP3F4.tmp" with contents
+[
+gep.lib winmm.lib /nologo /entry:"wWinMainCRTStartup " /subsystem:windows /incremental:yes /pdb:"Debug/ZhongTWind.pdb" /debug /machine:I386 /out:"Debug/ZhongTWind.exe" /pdbtype:sept 
+".\Debug\CarControlParam.obj"
+".\Debug\ComboBoxExt.obj"
+".\Debug\DlgIOTest.obj"
+".\Debug\DlgWorkPlan.obj"
+".\Debug\EditEx.obj"
+".\Debug\GenParam.obj"
+".\Debug\ListCtrlEx.obj"
+".\Debug\MyButton.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SysParamSetDlg.obj"
+".\Debug\TaskComputeParam.obj"
+".\Debug\WindTaskInfo.obj"
+".\Debug\WorkMonitorDlg.obj"
+".\Debug\ZhongTWind.obj"
+".\Debug\ZhongTWindDlg.obj"
+".\Debug\ZhongTWind.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP3F4.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ZhongTWind.cpp
+Linking...
+Creating temporary file "D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP3F5.tmp" with contents
+[
+/nologo /o"Debug/ZhongTWind.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\CarControlParam.sbr"
+".\Debug\ComboBoxExt.sbr"
+".\Debug\DlgIOTest.sbr"
+".\Debug\DlgWorkPlan.sbr"
+".\Debug\EditEx.sbr"
+".\Debug\GenParam.sbr"
+".\Debug\ListCtrlEx.sbr"
+".\Debug\MyButton.sbr"
+".\Debug\SysParamSetDlg.sbr"
+".\Debug\TaskComputeParam.sbr"
+".\Debug\WindTaskInfo.sbr"
+".\Debug\WorkMonitorDlg.sbr"
+".\Debug\ZhongTWind.sbr"
+".\Debug\ZhongTWindDlg.sbr"]
+Creating command line "bscmake.exe @D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP3F5.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ZhongTWind.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZhongTWind - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/ZhongTWind.res" /d "_DEBUG" "E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\ZhongTWind.rc"" 
+Creating temporary file "D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP4B7.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/ZhongTWind.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\arControlParam.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\ComboBoxExt.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\DlgIOTest.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\DlgWorkPlan.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\EditEx.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\GenParam.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\ListCtrlEx.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\MyButton.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\SysParamSetDlg.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\TaskComputeParam.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\WindTaskInfo.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\WorkMonitorDlg.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\ZhongTWind.cpp"
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\ZhongTWindDlg.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP4B7.tmp" 
+Creating temporary file "D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP4B8.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/ZhongTWind.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP4B8.tmp" 
+Creating temporary file "D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP4B9.tmp" with contents
+[
+MPC2810.lib winmm.lib /nologo /entry:"wWinMainCRTStartup " /subsystem:windows /incremental:yes /pdb:"Debug/ZhongTWind.pdb" /debug /machine:I386 /out:"Debug/ZhongTWind.exe" /pdbtype:sept 
+".\Debug\arControlParam.obj"
+".\Debug\ComboBoxExt.obj"
+".\Debug\DlgIOTest.obj"
+".\Debug\DlgWorkPlan.obj"
+".\Debug\EditEx.obj"
+".\Debug\GenParam.obj"
+".\Debug\ListCtrlEx.obj"
+".\Debug\MyButton.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SysParamSetDlg.obj"
+".\Debug\TaskComputeParam.obj"
+".\Debug\WindTaskInfo.obj"
+".\Debug\WorkMonitorDlg.obj"
+".\Debug\ZhongTWind.obj"
+".\Debug\ZhongTWindDlg.obj"
+".\Debug\ZhongTWind.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP4B9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+arControlParam.cpp
+ComboBoxExt.cpp
+DlgIOTest.cpp
+DlgWorkPlan.cpp
+EditEx.cpp
+GenParam.cpp
+ListCtrlEx.cpp
+E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\ListCtrlEx.cpp(389) : warning C4018: '==' : signed/unsigned mismatch
+MyButton.cpp
+SysParamSetDlg.cpp
+TaskComputeParam.cpp
+WindTaskInfo.cpp
+WorkMonitorDlg.cpp
+E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\WorkMonitorDlg.cpp(1215) : warning C4101: 'EndPosEncoder' : unreferenced local variable
+E:\工作\连云港中通\ZhongTWind\zhongtong-winding-control\乐创版本\ZhongTWind\WorkMonitorDlg.cpp(1225) : warning C4101: 'temp_CurSpeed' : unreferenced local variable
+ZhongTWind.cpp
+ZhongTWindDlg.cpp
+Generating Code...
+Linking...
+Creating temporary file "D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP4BB.tmp" with contents
+[
+/nologo /o"Debug/ZhongTWind.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\arControlParam.sbr"
+".\Debug\ComboBoxExt.sbr"
+".\Debug\DlgIOTest.sbr"
+".\Debug\DlgWorkPlan.sbr"
+".\Debug\EditEx.sbr"
+".\Debug\GenParam.sbr"
+".\Debug\ListCtrlEx.sbr"
+".\Debug\MyButton.sbr"
+".\Debug\SysParamSetDlg.sbr"
+".\Debug\TaskComputeParam.sbr"
+".\Debug\WindTaskInfo.sbr"
+".\Debug\WorkMonitorDlg.sbr"
+".\Debug\ZhongTWind.sbr"
+".\Debug\ZhongTWindDlg.sbr"]
+Creating command line "bscmake.exe @D:\DOCUME~1\DANIEL~1\LOCALS~1\Temp\RSP4BB.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ZhongTWind.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
